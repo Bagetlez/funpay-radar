@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FunPay Radar — что продавать на FunPay</title>
+<meta name="description" content="Где на FunPay деньги: оборот по играм и разделам, ниши с высоким спросом и малым числом продавцов. Обновляется каждые 75 минут.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* layout: one narrow column, radar-console look; data in mono */
+:root{--bg:#0d1412;--panel:#131d1a;--line:#22322d;--fg:#e4efe9;--mut:#8aa39a;--acc:#5ef2b0;--acc2:#2c8f69;
+--disp:'Unbounded',system-ui,sans-serif;--body:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 var(--body)}
+.w{max-width:980px;margin:0 auto;padding:40px max(16px,env(safe-area-inset-left)) 64px max(16px,env(safe-area-inset-right))}
+h1{font:700 clamp(30px,6vw,52px)/1.05 var(--disp);margin:0 0 14px;letter-spacing:-.01em;text-wrap:balance}
+h1 b{color:var(--acc);font-weight:700}
+h2{font:500 19px/1.3 var(--disp);margin:0 0 6px}
+p{margin:0;max-width:66ch} .mut{color:var(--mut);font-size:13px}
+.top{display:flex;flex-direction:column;gap:14px;margin-bottom:34px}
+.stamp{font:500 12px var(--mono);color:var(--acc);letter-spacing:.08em;text-transform:uppercase}
+.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin:6px 0 40px}
+.kpi div{background:var(--panel);padding:16px 18px;display:flex;flex-direction:column;gap:2px}
+.kpi b{font:500 24px var(--mono);font-variant-numeric:tabular-nums} .kpi span{color:var(--mut);font-size:12px}
+section{margin:0 0 44px;display:flex;flex-direction:column;gap:12px}
+.bar{display:grid;grid-template-columns:minmax(90px,30%) 1fr auto;gap:12px;align-items:center;font-size:14px}
+.bar .g{overflow:hidden;text-overflow:ellipsis;white-space:nowrap} .bar .t{height:14px;background:var(--panel);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc2),var(--acc))} .bar .v{font:13px var(--mono);font-variant-numeric:tabular-nums;color:var(--mut)}
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font:13px var(--mono);font-variant-numeric:tabular-nums}
+th,td{padding:9px 12px;text-align:right;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--mut);font-weight:500;background:var(--panel)} td.l,th:first-child{text-align:left;white-space:normal;font-family:var(--body);min-width:190px}
+tr:last-child td{border-bottom:0} a{color:var(--fg);text-decoration-color:var(--acc2);text-underline-offset:3px} a:hover{color:var(--acc)}
+ul.new{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:8px}
+ul.new li{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:2px}
+ul.new span{color:var(--mut);font:12px var(--mono)}
+.pro{border:1px solid var(--acc2);border-radius:12px;padding:22px;display:flex;flex-direction:column;gap:12px;background:linear-gradient(180deg,#132520,var(--panel))}
+.pro ul{margin:0;padding-left:18px;line-height:1.7}
+.cta{align-self:flex-start;background:var(--acc);color:#05110c;font:600 15px var(--body);padding:11px 18px;border-radius:8px;text-decoration:none}
+.cta:hover{color:#05110c;filter:brightness(1.08)} .cta.off{background:var(--panel);color:var(--mut);border:1px solid var(--line)}
+a:focus-visible,.cta:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+details{color:var(--mut);font-size:14px} details summary{cursor:pointer;color:var(--fg)} details li{margin:4px 0}
+</style></head><body><div class="w">
+<div class="top">
+  <span class="stamp">FunPay Radar · обновлено 18.11.2026 04:35 МСК</span>
+  <h1>Где на FunPay <b>деньги</b>, а где только конкуренты</h1>
+  <p>Каждые 75 минут радар обходит все 1 375 разделов FunPay и считает реальные продажи: новые отзывы продавцов и проданные остатки валюты. Ниже показано, какие игры и разделы приносят деньги и где покупателей больше, чем продавцов.</p>
+</div>
+<div class="kpi">
+  <div><b>6 848 288 ₽</b><span>оборот в сутки по заказам с отзывом</span></div>
+  <div><b>11 261</b><span>заказов в сутки</span></div>
+  <div><b>54 405</b><span>продавцов с лотами</span></div>
+  <div><b>898 005</b><span>лотов на витрине</span></div>
+</div>
+<section><h2>Игры с самым большим оборотом</h2><p class="mut">₽ в сутки, оценка за 2 ч наблюдения</p>
+<div><div class="bar"><span class="g">Roblox</span><span class="t"><i style="width:100.0%"></i></span><span class="v">1 102 397 ₽</span></div>
+<div class="bar"><span class="g">Fortnite</span><span class="t"><i style="width:58.0%"></i></span><span class="v">639 605 ₽</span></div>
+<div class="bar"><span class="g">World of Warcraft: Forever</span><span class="t"><i style="width:47.6%"></i></span><span class="v">524 935 ₽</span></div>
+<div class="bar"><span class="g">Rob Run</span><span class="t"><i style="width:38.7%"></i></span><span class="v">426 693 ₽</span></div>
+<div class="bar"><span class="g">Steam</span><span class="t"><i style="width:36.3%"></i></span><span class="v">399 846 ₽</span></div>
+<div class="bar"><span class="g">Aion 2</span><span class="t"><i style="width:32.9%"></i></span><span class="v">362 900 ₽</span></div>
+<div class="bar"><span class="g">Dota 2</span><span class="t"><i style="width:24.5%"></i></span><span class="v">269 890 ₽</span></div>
+<div class="bar"><span class="g">Discord</span><span class="t"><i style="width:14.4%"></i></span><span class="v">158 734 ₽</span></div>
+<div class="bar"><span class="g">Mobile Legends</span><span class="t"><i style="width:14.4%"></i></span><span class="v">158 463 ₽</span></div>
+<div class="bar"><span class="g">Raid: Shadow Legends</span><span class="t"><i style="width:14.4%"></i></span><span class="v">158 414 ₽</span></div>
+<div class="bar"><span class="g">PUBG Mobile</span><span class="t"><i style="width:14.1%"></i></span><span class="v">155 201 ₽</span></div>
+<div class="bar"><span class="g">Torchlight: Infinite</span><span class="t"><i style="width:13.9%"></i></span><span class="v">153 683 ₽</span></div></div></section>
+<section><h2>Лучшие ниши: много денег на одного продавца</h2>
+<p class="mut">Рейтинг = оборот раздела в сутки на одного продавца онлайн, с поправкой на монополию лидера. Учитываются разделы с тремя и более заказами.</p>
+<div class="tw"><table><thead><tr><th>Раздел</th><th>₽/сут</th><th>Заказов/сут</th><th>Чек</th><th>Онлайн</th><th>₽/сут на продавца</th></tr></thead><tbody><tr><td class="l"><a href="https://funpay.com/lots/4566/" rel="noopener" target="_blank">ChatGPT · Промокоды</a></td><td>114 170 ₽</td><td>57</td><td>2 000 ₽</td><td>16</td><td>6 716 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/928/" rel="noopener" target="_blank">Fortnite · В-баксы</a></td><td>434 509 ₽</td><td>313</td><td>1 388 ₽</td><td>136</td><td>3 172 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/chips/258/" rel="noopener" target="_blank">World of Warcraft: Forever · Золото</a></td><td>388 215 ₽</td><td>220</td><td>1 763 ₽</td><td>153</td><td>2 521 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/4753/" rel="noopener" target="_blank">Roblox · Anime Adventures</a></td><td>248 604 ₽</td><td>279</td><td>890 ₽</td><td>127</td><td>1 942 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/chips/244/" rel="noopener" target="_blank">Aion 2 · Кинары</a></td><td>353 045 ₽</td><td>131</td><td>2 696 ₽</td><td>145</td><td>2 418 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/chips/99/" rel="noopener" target="_blank">Roblox · Робуксы</a></td><td>293 919 ₽</td><td>367</td><td>801 ₽</td><td>138</td><td>2 114 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/1008/" rel="noopener" target="_blank">Steam · Ключи</a></td><td>355 149 ₽</td><td>172</td><td>2 064 ₽</td><td>336</td><td>1 054 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/4792/" rel="noopener" target="_blank">Rob Run · Услуги</a></td><td>197 512 ₽</td><td>108</td><td>1 832 ₽</td><td>193</td><td>1 018 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/4679/" rel="noopener" target="_blank">Call of Duty: Modern Warfare 4 · Услуги</a></td><td>65 603 ₽</td><td>36</td><td>1 823 ₽</td><td>34</td><td>1 874 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/566/" rel="noopener" target="_blank">Raid: Shadow Legends · Аккаунты</a></td><td>152 594 ₽</td><td>44</td><td>3 506 ₽</td><td>101</td><td>1 496 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/chips/140/" rel="noopener" target="_blank">Standoff 2 · Золото</a></td><td>84 985 ₽</td><td>95</td><td>898 ₽</td><td>94</td><td>895 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/chips/186/" rel="noopener" target="_blank">Black Russia · Вирты</a></td><td>73 698 ₽</td><td>69</td><td>1 072 ₽</td><td>97</td><td>752 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/449/" rel="noopener" target="_blank">Hay Day · Предметы</a></td><td>14 964 ₽</td><td>36</td><td>412 ₽</td><td>9</td><td>1 496 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/666/" rel="noopener" target="_blank">Valorant · Обучение</a></td><td>73 326 ₽</td><td>45</td><td>1 638 ₽</td><td>78</td><td>928 ₽</td></tr>
+<tr><td class="l"><a href="https://funpay.com/lots/366/" rel="noopener" target="_blank">Mobile Legends · Аккаунты</a></td><td>144 649 ₽</td><td>57</td><td>2 540 ₽</td><td>138</td><td>1 041 ₽</td></tr></tbody></table></div></section>
+<section><h2>Спрос есть, продавцов онлайн пять или меньше</h2>
+<div class="tw"><table><thead><tr><th>Раздел</th><th>₽/сут</th><th>Заказов/сут</th><th>Чек</th><th>Онлайн</th></tr></thead><tbody><tr><td class="l" colspan="9">Данные копятся, загляните через пару часов.</td></tr></tbody></table></div></section>
+<section><h2>Новые разделы FunPay</h2><p class="mut">В свежем разделе первые продавцы собирают спрос почти без конкуренции.</p><ul class="new"><li><a href="https://funpay.com/lots/4826/" rel="noopener" target="_blank">World of Warcraft: Forever · PvP</a><span>82 лотов · 8 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4825/" rel="noopener" target="_blank">Limbus Company · Прочее</a><span>1 лотов · 1 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4824/" rel="noopener" target="_blank">Limbus Company · Донат</a><span>16 лотов · 4 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4823/" rel="noopener" target="_blank">Limbus Company · Lunacy</a><span>9 лотов · 2 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4822/" rel="noopener" target="_blank">Limbus Company · Аккаунты</a><span>22 лотов · 0 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4821/" rel="noopener" target="_blank">Cartesia · Услуги</a><span>0 лотов · 0 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4820/" rel="noopener" target="_blank">Cartesia · Подписка</a><span>14 лотов · 3 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4819/" rel="noopener" target="_blank">Cartesia · Аккаунты</a><span>0 лотов · 0 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4818/" rel="noopener" target="_blank">Valor Mortis · Ключи</a><span>22 лотов · 8 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4817/" rel="noopener" target="_blank">World of Warcraft Mists of Pandaria Classic · Аддоны и интерфейс</a><span>69 лотов · 6 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4814/" rel="noopener" target="_blank">World of Warcraft Classic + Hardcore + Season of Discovery · Аддоны и интерфейс</a><span>90 лотов · 13 онлайн</span></li>
+<li><a href="https://funpay.com/lots/4812/" rel="noopener" target="_blank">Rob Run · Деньги</a><span>2 001 лотов · 319 онлайн</span></li></ul></section>
+<section class="pro"><h2>Полная версия в Telegram</h2>
+<ul><li>топ-30 ниш и все 1 375 разделов с цифрами;</li><li>разбор любой игры: оборот, средний чек и конкуренция по каждому разделу;</li>
+<li>продажи любого продавца: что, сколько и почём он продаёт;</li><li>уведомления о новых разделах FunPay.</li></ul><span class="cta off">Telegram-бот запускается</span></section>
+<details><summary>Как считаются цифры</summary><ul>
+<li>Отзыв на FunPay оставляют только после завершённого заказа. Мы видим, у кого и в какой игре он появился, и на какую сумму.</li>
+<li>По валюте (робуксы, золото и т.п.) считаем, насколько уменьшился остаток в лоте между снимками.</li>
+<li>Отзыв пишут не все покупатели, поэтому реальный оборот выше. Пропорции между разделами при этом сохраняются.</li>
+<li>Мы читаем только публичные страницы FunPay, без доступа к чьим-либо аккаунтам.</li></ul></details>
+</div></body></html>
